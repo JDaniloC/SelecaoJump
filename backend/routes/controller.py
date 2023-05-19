@@ -8,7 +8,7 @@ class Core:
     def load_log_data(self, file_path):
         """ Loads the csv in file_path into an event_log. """
         columns_to_datetime = ['Start', 'End']
-        df = pandas.read_csv(file_path, encoding = "utf-8", sep=';', parse_dates=columns_to_datetime, on_bad_lines="skip")
+        df = pandas.read_csv(file_path, encoding = "utf-8", sep=';', parse_dates=columns_to_datetime)
         df = pm4py.format_dataframe(df, case_id="Case", activity_key="ActivityCode", timestamp_key="End", start_timestamp_key="Start")
         self.log = pm4py.convert_to_event_log(df)
 

@@ -1,0 +1,15 @@
+[[redirects]]
+  from = "/api/processos/stats/"
+  to = "https://desafio-jump-backend.up.railway.app/api/processos/stats/"
+  status = 200
+
+[[redirects]]
+  from = "/api/processos/"
+  to = "https://desafio-jump-backend.up.railway.app/api/processos/"
+  status = 200
+  query = { movimento = ":movimento" }
+
+[[redirects]]
+  from = "/api/visualization/image/"
+  to = "https://desafio-jump-backend.up.railway.app/api/visualization/image/"
+  status = 200

@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnalysisModule } from './analysis/analysis.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FlowchartModule } from './flowchart/flowchart.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     SharedModule,
     AnalysisModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlowchartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

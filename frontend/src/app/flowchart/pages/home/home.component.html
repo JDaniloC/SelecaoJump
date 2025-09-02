@@ -1,0 +1,7 @@
+<div class="app-home">
+  <app-statistics [data]="statisticsData"></app-statistics>
+  <app-flowgraph *ngIf="graphSource != null" [graphSource]="graphSource" ></app-flowgraph>
+  <mat-card *ngIf="isEmpty()">
+    Carregando...
+  </mat-card>
+</div>

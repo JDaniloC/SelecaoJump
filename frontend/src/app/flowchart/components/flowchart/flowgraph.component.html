@@ -1,0 +1,8 @@
+<mat-card>
+  <div
+    *ngIf="isNotEmpty()"
+    #graph
+    class="image-container"
+    [innerHTML]="graphSource"
+  ></div>
+</mat-card>

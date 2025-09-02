@@ -7,11 +7,11 @@ import { AnalysisFacade } from './analysis.facade';
 import { analysisInitializerProvider } from './analysis.initializer';
 import { AnalysisRoutingModule } from './analysis-routing.module';
 import { AnalysisTableComponent } from './components/analysis-table/analysis-table.component';
-import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   providers: [
@@ -25,10 +25,10 @@ import { MatSortModule } from '@angular/material/sort';
     AnalysisTableComponent,
   ],
   imports: [
+    SharedModule,
     CommonModule,
     MatIconModule,
     MatSortModule,
-    MatCardModule,
     MatTableModule,
     MatPaginatorModule,
     AnalysisRoutingModule,

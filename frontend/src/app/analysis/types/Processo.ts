@@ -1,6 +1,6 @@
 export interface Processo {
-    NPU: string;
-    movimentos?: number;
-    totalDuration: number;
-    totalMovimentos: number;
+  NPU: string;
+  movimentosCount: number;
+  duration: number;
+  pinnedMovimentoCount: number;
 }

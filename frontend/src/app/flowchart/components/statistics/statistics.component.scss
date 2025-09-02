@@ -1,0 +1,42 @@
+mat-card {
+  background-color: var(--color-backgorund);
+  flex-direction: row;
+  gap: 1em;
+  color: var(--color-font);
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+  }
+
+  div:first-child {
+    padding-left: 1em;
+
+    @media screen and (max-width: 800px) {
+      padding-left: 0.5em;
+    }
+  }
+
+  .statistic-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    gap: 0.5em;
+
+    span:nth-child(2) {
+      font-size: var(--fonte-24);
+      font-weight: 900;
+
+      @media screen and (max-width: 800px) {
+        font-size: var(--fonte-16);
+        font-weight: 700;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 0.5em;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+  }
+}

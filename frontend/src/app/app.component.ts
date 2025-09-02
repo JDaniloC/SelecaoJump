@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor () {
+    if (localStorage.getItem('dark-theme') === 'true') {
+      document.body.classList.add('dark-theme');
+    }
+   }
 }

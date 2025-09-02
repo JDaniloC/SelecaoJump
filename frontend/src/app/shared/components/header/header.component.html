@@ -1,12 +1,15 @@
-<mat-toolbar id="app-header">  
-    <img class="logo-image" src="/assets/logo"
-         alt="A logo do JuMP acompanhado pelo nome em verde e azul">
-    <span>
-        <mat-icon> account_tree </mat-icon>
+<mat-toolbar id="app-header">
+    <img class="logo-image" src="/assets/logo.webp"
+         alt="Logo JuMP">
+    <span title="Ir a tela inicial" [routerLink]="['/']">
+        <mat-icon class="white-icon" aria-hidden="false" aria-label="Fluxograma"> account_tree </mat-icon>
         <p> Fluxograma </p>
     </span>
-    <span [routerLink]="['/analysis/']">
-        <mat-icon> cases </mat-icon>
+    <span title="Ir a tabela de processos" [routerLink]="['/analysis/']">
+        <mat-icon class="white-icon" aria-hidden="false" aria-label="Tabela de processos"> cases </mat-icon>
         <p> Análise de processos </p>
+    </span>
+    <span title="Mudar tema" id="dark-mode-button" (click)="darkMode()">
+      <mat-icon class="white-icon" aria-hidden="false" aria-label="Mudar tema">invert_colors</mat-icon>
     </span>
 </mat-toolbar>

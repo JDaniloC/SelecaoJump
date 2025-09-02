@@ -6,6 +6,8 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     image: jump/backend
+    environment:
+      - PORT=8000
     ports:
       - "8000:8000"
     restart: always
@@ -18,6 +20,8 @@ services:
       dockerfile: Dockerfile
     image: jump/frontend
     restart: always
+    ports:
+      - "80:80"
     networks:
       - jump-network
     depends_on:
